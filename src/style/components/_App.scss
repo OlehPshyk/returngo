@@ -1,0 +1,7 @@
+.App{
+  position: relative;  
+  background-color: $app-bg;
+  @include breakpoint(xl){
+    height: 100%;
+  }
+}

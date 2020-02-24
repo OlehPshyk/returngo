@@ -1,0 +1,20 @@
+.content{
+  @include breakpoint(xl){
+    flex: 1 1 auto;  
+    overflow-y: auto; 
+  }  
+  .content-container{ 
+    padding: 25px $pad-x 30px; 
+    @include breakpoint(xl){   
+      padding: 25px $pad-x-xl 30px; 
+    }
+  }
+  .page-title{
+    font-family: Poppins;    
+    // font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #50649C;
+    margin-bottom: 25px;
+  }  
+}

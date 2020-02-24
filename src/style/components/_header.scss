@@ -1,0 +1,18 @@
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  min-height: $header-height;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 $pad-x-xl;
+  .user-email{
+    font-family: $secondary-font-family;    
+    font-size: 13px;
+    line-height: 1.46;
+    color: #8997BD;
+  }
+}

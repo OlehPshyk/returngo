@@ -1,7 +1,36 @@
-body {
-  font-family: sans-serif;   
+html{
+  height: 100%;
 }
+body {
+  font-family: sans-serif; 
+  height: 100%;  
+}
+
 
 @import "custom";
 //bootstrap all styles
 @import "~bootstrap/scss/bootstrap";
+
+@import 'variables';
+@import 'mixins';
+//@import 'fonts'; //used google fonts
+@import 'icons';
+@import 'base';
+@import 'wrapper';
+@import 'plugins';
+@import 'animations';
+@import 'typography';
+@import 'forms';
+@import 'buttons';
+@import 'video';
+@import 'helpers';
+
+@import './components/App';
+@import './components/main';
+@import './components/sidebar';
+@import './components/header';
+@import './components/content';
+@import './components/footer';
+
+@import './components/cards';
+@import './components/filter-btns';
