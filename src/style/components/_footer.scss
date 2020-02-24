@@ -1,0 +1,9 @@
+.footer{
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 $pad-x-xl;
+  min-height: 60px;
+  border-top: 1px solid #DBE0EC;
+}

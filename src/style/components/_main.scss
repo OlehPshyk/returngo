@@ -1,0 +1,10 @@
+.main{
+  position: relative;
+  padding-top: $header-height;  
+  @include breakpoint(xl){
+    margin-left: $sidebar-width;    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
