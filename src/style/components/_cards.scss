@@ -63,6 +63,7 @@
 .h-card-body{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .h-card-number{
     font-family: $secondary-font-family;    
     font-weight: 700;
