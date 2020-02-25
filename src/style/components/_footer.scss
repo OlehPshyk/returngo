@@ -6,4 +6,11 @@
   padding: 0 $pad-x-xl;
   min-height: 60px;
   border-top: 1px solid #DBE0EC;
+  .copyright{
+    font-family: $secondary-font-family;    
+    font-size: 13px;
+    line-height: 1.46;    
+    color: #7081B9;
+    text-transform: uppercase;
+  }
 }
