@@ -9,10 +9,46 @@
   justify-content: flex-end;
   align-items: center;
   padding: 0 $pad-x-xl;
+  .user-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .logo-container{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EAF0F7;    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+    .user-svg{
+      width: 20px;
+      height: auto;
+    }
+    .user-icon{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }  
   .user-email{
     font-family: $secondary-font-family;    
     font-size: 13px;
     line-height: 1.46;
     color: #8997BD;
+    cursor: pointer;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+  .r-arrow{
+    cursor: pointer;
   }
 }
