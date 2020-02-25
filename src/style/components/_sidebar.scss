@@ -46,7 +46,7 @@ button.nav-link{
   list-style: none;
   .nav-item{
     height: 44px;
-    &:hover, &.active{
+    &.active{
       background: rgba(116, 150, 248, 0.05);
       position: relative;
       &:before{

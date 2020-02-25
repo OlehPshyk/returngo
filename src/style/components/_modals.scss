@@ -1,0 +1,56 @@
+
+.modal{
+  .modal-close-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    @include outline(0);
+    cursor: pointer;
+    border: none;  
+    display: inline-flex;
+    padding: 0;  
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    background: transparent;    
+    &:hover, &:active, &:focus, &:active:hover{
+      @include outline(0);
+      background: transparent;      
+    }  
+  }  
+  .mod-body{
+    padding: 40px 20px 10px;
+  }
+  .mod-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px 0;
+  }
+  .mod-text{    
+    font-family: $global-font-family;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #bcc0d2;
+    text-align: justify;
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .accent{
+      color: #50649C;
+      font-weight: 700;
+    }
+  }
+}
+.modal-content{
+  border-radius: 5px;
+}
+@include breakpoint(xl){
+  .modal-dialog {
+    max-width: 602px;    
+  }
+}
+.modal-backdrop.show {
+  opacity: 0.4;
+}
