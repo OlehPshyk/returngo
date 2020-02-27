@@ -4,7 +4,7 @@
   min-height: 100%;
   @include breakpoint(xl){
     margin-left: $sidebar-width;       
-    display: flex;
-    flex-direction: column;    
+    // display: flex;
+    // flex-direction: column;    
   }  
 }
