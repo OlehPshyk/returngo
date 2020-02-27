@@ -1,7 +1,7 @@
 .content{  
   padding-top: $header-height;
   @include breakpoint(xl){
-    flex: 1 1 auto;  
+    // flex: 1 1 auto;  
     // overflow-y: auto; 
   }  
   .content-container{ 
