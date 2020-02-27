@@ -1,10 +1,10 @@
 .main{
-  position: relative;
-  padding-top: $header-height;  
+  position: relative;   
+  background-color: $app-bg;
+  min-height: 100%;
   @include breakpoint(xl){
-    margin-left: $sidebar-width;    
+    margin-left: $sidebar-width;       
     display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
+    flex-direction: column;    
+  }  
 }

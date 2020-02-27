@@ -2,7 +2,10 @@
   display: none;
   @include breakpoint(xl){
     display: block;
-    position: absolute;
+    //  if need internall scroll
+    // position: absolute;
+    position: fixed;
+    z-index: 20;
     top: 0;
     left: 0;
     width: $sidebar-width;

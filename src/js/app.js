@@ -22,7 +22,7 @@ if (returnsOverview) {
   const optionsOverviewChart = {
     series: [
       {
-        name: 'Returns saved',
+        name: 'Returns rescued',
         type: 'column',
         data: [70, 45, 45, 55, 62, 60, 45, 65, 70, 75, 45, 60],
       },
