@@ -17,6 +17,10 @@ import 'bootstrap/js/dist/util';
 // import './returnsOverviewChart';
 import ApexCharts from 'apexcharts';
 
+
+import 'select2';
+
+
 const returnsOverview = document.querySelector('#returns-overview-chart');
 if (returnsOverview) {
   const optionsOverviewChart = {
@@ -137,9 +141,17 @@ if (returnsOverview) {
   };
   const chart = new ApexCharts(returnsOverview, optionsOverviewChart);
   document.addEventListener('DOMContentLoaded', () => {
-    chart.render();
+    chart.render();     
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  $('.js-select2').select2(
+    {
+      width: '100%'
+    }
+  );   
+});
 
 
 // window.Popper = Popper;

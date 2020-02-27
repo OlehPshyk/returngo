@@ -93,3 +93,49 @@
   }  
 }
 
+.card-title-container{
+  margin-bottom: 40px;
+  .setting-title{
+    font-family: $secondary-font-family;    
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;   
+    color: #50649C;
+  }
+}
+
+.set-item{  
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+  @include breakpoint(md){
+    display: flex;
+    align-items: flex-start;
+  }
+  .set-item-t-part{
+    margin: 0 0 10px 0;
+    @include breakpoint(md){
+      margin: 0 35px 0 0;
+      flex: 1 1 auto;
+      max-width: 260px;
+    }
+  }
+  .set-item-i-part{
+    flex: 1 1 auto;
+    max-width: 370px;
+  }
+  .set-item-title{
+    font-family: $secondary-font-family;    
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.46;
+    color: #656D9A;
+    margin-bottom: 4px;
+  }
+  .set-item-text{
+    font-family: $global-font-family;    
+    font-size: 14px;
+    line-height: 1.57;
+    color: #A5ABC3;
+  }
+}

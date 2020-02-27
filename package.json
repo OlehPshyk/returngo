@@ -57,6 +57,7 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "apexcharts": "^3.15.6"
+    "apexcharts": "^3.15.6",
+    "select2": "^4.0.13"
   }
 }
