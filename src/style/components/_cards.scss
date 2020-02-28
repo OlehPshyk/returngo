@@ -123,6 +123,22 @@
   .set-item-i-part{
     flex: 1 1 auto;
     max-width: 370px;
+    .input-group{
+      &:not(:last-child){
+        margin-bottom: 8px;
+      }
+    }    
+  }
+  .btn-v2-container{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    .btn-v2{
+      &:not(:last-child){
+        margin-right: 5px;
+      }
+    }
   }
   .set-item-title{
     font-family: $secondary-font-family;    
