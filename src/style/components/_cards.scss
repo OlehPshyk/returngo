@@ -9,7 +9,12 @@
   }
   &:not(:last-child){
     margin: 0 0 24px 0;
-  }  
+  } 
+  .v-card-btn-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  } 
 }
 
 .h-card{
@@ -95,6 +100,9 @@
 
 .card-title-container{
   margin-bottom: 40px;
+  &.v1{
+    margin-bottom: 20px;
+  }
   .setting-title{
     font-family: $secondary-font-family;    
     font-weight: 500;
@@ -104,6 +112,11 @@
   }
 }
 
+.v-card-section{
+  &:not(:last-child){
+    margin-bottom: 30px;
+  }
+}
 .set-item{  
   &:not(:last-child){
     margin-bottom: 20px;
@@ -154,4 +167,13 @@
     line-height: 1.57;
     color: #A5ABC3;
   }
+  .set-item-i-part{
+    .i-part-text{
+      font-family: $secondary-font-family;      
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.46;
+      color: #656D9A;
+    }
+  }      
 }
