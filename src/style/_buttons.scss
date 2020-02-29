@@ -64,11 +64,13 @@
 	border: 1px solid #EBF0F7;	
 	border-radius: 5px;
 	-webkit-appearance: none;	
-  user-select: none;  
-  &:hover, &.active, &:active, &:focus, &:active:hover,
+  user-select: none; 
+  &:hover, &:active, &:focus, &:active:hover{
+    @include outline(0);    
+  }   
+  &:hover, &.active, &:active, &:active:hover,
   &:not(:disabled):not(.disabled).active,
-  &:not(:disabled):not(.disabled):active {
-    @include outline(0);
+  &:not(:disabled):not(.disabled):active {    
     color: #212529;
     background-color: #dee8f3;
     border: 1px solid #dee8f3;
