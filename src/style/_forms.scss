@@ -49,7 +49,7 @@ textarea {
 	@include outline(0);
 	display: block;
 	width: 100%;	
-	height: 38px;
+	height: $input-height;
 	font-family: $secondary-font-family;	
 	font-weight: 400;
 	font-size: 13px;
@@ -105,8 +105,44 @@ textarea {
 	border-radius: 5px;
 	-webkit-appearance: none;	
 	user-select: none;
+	// transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	// &:hover, &.active, &:active, &:focus, &:active:hover,
+  // &:not(:disabled):not(.disabled).active,
+  // &:not(:disabled):not(.disabled):active {
+  //   @include outline(0);
+  //   color: #212529;
+  //   background-color: #dee8f3;
+  //   border: 1px solid #dee8f3;
+  // }
 }
 
-.select2{
+	
+  
 
+.input-group-color-append {
+	display: flex;
+	cursor: pointer;
+	margin-left: -1px;
+	width: 40px;
+}
+.ret-color-picker{
+	@include outline(0);	
+	padding: 6px 9px;
+	cursor: pointer;	
+	height: 100%;
+	border: 1px solid #EBF0F7;
+  border-radius: 5px;
+	background-color: #fff;	
+	&:hover, &:active, &:focus, &:active:hover{
+		@include outline(0);			
+		box-shadow: none;
+	}
+}
+.input-group > .input-group-color-append > .ret-color-picker{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.input-group > .input-group-append > .input-group-btn{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 }

@@ -1,0 +1,108 @@
+// .custom-file-input:lang(en) ~ .custom-file-label::after {
+//   content: "Upload";
+// }
+// .custom-file{
+//   @include outline(0);
+//   &:hover, &:active, &:focus, &:active:hover{
+// 		@include outline(0);		
+// 		box-shadow: none;
+// 	}
+// }
+// .custom-file-input{
+//   @include outline(0);
+//   &:hover, &:active, &:focus, &:active:hover{
+// 		@include outline(0);		
+// 		box-shadow: none;
+// 	}
+// }
+
+// .custom-file-label {  
+//   height: $input-height;  
+//   line-height: 1.46;
+//   color: #2F5275;  
+//   border: 1px solid #EBF0F7;
+//   border-radius: 5px;
+//   margin-bottom: 0;
+//   display: inline-flex;
+//   align-items: center;
+// }
+// .custom-file-label::after {  
+//   height: $input-height;
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-family: $secondary-font-family;  
+//   font-weight: 400;
+//   font-size: 13px;
+//   line-height: 1.46;
+//   color: #2F5275;
+//   content: "Upload";
+//   background-color: #EAECEF;
+//   border-radius: 0 5px 5px 0;
+// }
+
+.rg-custom-file{
+  $fileinputwidth: 72px;
+  height: $input-height;  
+  @include outline(0);
+  &:hover, &:active, &:focus, &:active:hover{
+		@include outline(0);		
+    box-shadow: none;
+  }
+
+  display: inline-flex;
+  justify-content: flex-start;
+
+  .custom-file-input {    
+    height: $input-height;
+    pointer-events: none;
+    width: $fileinputwidth;
+    &:hover, &:active, &:focus, &:active:hover{
+      ~ .custom-file-label { 
+        // border: 1px solid #EBF0F7;    
+        border: none;     
+        @include outline(0);
+        box-shadow: none;            
+      }
+    } 
+    ~ .custom-file-label::after {
+      content: "Upload";
+    }   
+  }    
+  .custom-file-label {    
+    height: $input-height;
+    margin-bottom: 0;
+    // border: 1px solid #EBF0F7;      
+    border: none;
+    width: $fileinputwidth;
+    white-space: nowrap;
+    padding: 8px 0 8px calc( #{$fileinputwidth} + 15px);
+    pointer-events: none;
+    @include outline(0);
+    box-shadow: none;
+    cursor: pointer; 
+    display: inline-flex;
+    align-items: center;            
+  }  
+  .custom-file-label:after {
+    pointer-events: auto;
+    height: $input-height;
+    width: $fileinputwidth;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;  
+    border: 1px solid #EBF0F7;  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $secondary-font-family;  
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.46;
+    color: #2F5275;    
+    background-color: #EAECEF;
+    // border-radius: 0 5px 5px 0;
+    border-radius: 5px;
+  }
+}

@@ -4,8 +4,16 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
   border-radius: 3px;  
   .card-text{    
+    font-family: $global-font-family;    
+    font-size: 14px;
     line-height: 1.27;    
     color: #50649C;    
+  }
+  .card-text-v1{
+    font-family: $global-font-family;    
+    font-size: 14px;
+    line-height: 1.57;    
+    color: #A5ABC3;  
   }
   &:not(:last-child){
     margin: 0 0 24px 0;
@@ -20,6 +28,13 @@
 .h-card{
   padding: 15px 25px 15px 20px;
   background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 3px; 
+}
+
+.h-card-v1{
+  padding: 20px;
+  background: #FFFFFF;  
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
   border-radius: 3px; 
 }
@@ -91,7 +106,7 @@
 
 .cards-container-v320{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 320px));
+  grid-template-columns: repeat(auto-fit, 320px);
   grid-gap: 24px 24px;  
   &:not(:last-child){
     margin-bottom: 24px;
@@ -176,4 +191,18 @@
       color: #656D9A;
     }
   }      
+}
+.two-card-grid{
+  display: grid;
+  grid-gap: 27px 27px;
+  grid-template-columns: 100%;  
+  @include breakpoint(xl){
+    // grid-template-columns: minmax(45%,1fr) minmax(45%,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  }
+  flex-wrap: wrap;
+  &:not(:last-child){
+    margin-bottom: 27px;
+  }
+  // .h-card{}
 }
