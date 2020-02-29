@@ -1,0 +1,105 @@
+.example-container{
+  padding: 40px 0 0;
+  .example-text{
+    font-family: $secondary-font-family;    
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.46;    
+    color: #656D9A;
+    margin-bottom: 15px;
+  }
+  .example-shadow-container{
+    display: inline-flex;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 96.69%, rgba(0, 0, 0, 0.03) 100%), #FCFCFC;
+    padding: 10px 20px 55px;
+    margin: 0 -20px;
+  }
+  .example-phone-container{
+    width: 248px;
+    // background: linear-gradient(270deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 96.69%, rgba(0, 0, 0, 0.03) 100%), #FCFCFC;    
+    position: relative;    
+    .img-phone-wr{
+      width: 100%;
+      height: auto;
+    } 
+    .btn1{
+      width: 3px;
+      height: 60px;
+      background-color: #fff;      
+      position: absolute;
+      right: 1px;      
+      top: 23%;
+      transform: translate(100%, 0); 
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+    .btn2{
+      width: 3px;
+      height: 19px;
+      background-color: #fff;      
+      position: absolute;
+      left: 1px;      
+      top: 13%;
+      transform: translate(-100%, 0); 
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    } 
+    .btn3{
+      width: 3px;
+      height: 36px;
+      background-color: #fff;      
+      position: absolute;
+      left: 1px;      
+      top: 20%;
+      transform: translate(-100%, 0); 
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    } 
+    .btn4{
+      width: 3px;
+      height: 36px;
+      background-color: #fff;      
+      position: absolute;
+      left: 1px;      
+      top: 30%;
+      transform: translate(-100%, 0); 
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }  
+  }
+  .phone-parts-container{
+    position: absolute;
+    width: 250px; 
+    height: 100%;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    // .img-phone-parts{
+    //   width: 100%;
+    //   height: auto;
+    // }
+  }
+  .phone-in-container{
+    position: absolute;
+    width: 240px;           
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .img-phone-in{
+      width: 100%;
+      height: auto;
+    }
+  }  
+  .mobile-content-container{
+    position: absolute;
+    width: 217px;    
+    top: 26px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    .img-phone-content{
+      width: 100%;
+      height: auto;
+    }
+  }  
+}
+
