@@ -105,7 +105,19 @@ textarea {
 	border-radius: 5px;
 	-webkit-appearance: none;	
 	user-select: none;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	&:hover, &.active, &:active, &:focus, &:active:hover,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    @include outline(0);
+    color: #212529;
+    background-color: #dee8f3;
+    border: 1px solid #dee8f3;
+  }
 }
+
+	
+  
 
 .input-group-color-append {
 	display: flex;
