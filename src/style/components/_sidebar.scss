@@ -48,7 +48,7 @@ button.nav-link{
   padding: 0;
   list-style: none;
   .nav-item{
-    height: 44px;
+    height: 44px;    
     &.active{
       background: rgba(116, 150, 248, 0.05);
       position: relative;
@@ -63,15 +63,15 @@ button.nav-link{
       }
       .nav-link-l-icon{
         path{
-          fill: #7496F8;
+          fill: #7496F8;          
         }        
       }
       .nav-link-t{
-        color: #7496F8;
+        color: #7496F8;        
       }
       .nav-link-r-icon{
         path{
-          fill: #7496F8;
+          fill: #7496F8;          
         }
       }
     }
@@ -106,16 +106,17 @@ button.nav-link{
     align-items: center;
     .nav-link-l-icon{
       flex: 0 0 auto;
-      margin-right: 10px;
+      margin-right: 10px;      
     }
     .nav-link-t{
       font-family: $secondary-font-family;      
       font-size: 13px;
       line-height: 1.46;
       color: #A9BACA;
+      transition: color .3s ease-out;
     }
   }
   .nav-link-r-icon{
-    flex: 0 0 auto;
+    flex: 0 0 auto;    
   }
 }

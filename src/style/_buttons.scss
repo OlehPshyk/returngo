@@ -51,3 +51,28 @@
     margin-right: 10px;
   }
 }
+
+.input-group-btn{  
+  @include outline(0);
+	padding: 8px 10px;
+	font-family: $secondary-font-family;	
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.46;
+	color: #50649C;
+	background-color: #fff;
+	border: 1px solid #EBF0F7;	
+	border-radius: 5px;
+	-webkit-appearance: none;	
+  user-select: none;  
+  &:hover, &.active, &:active, &:focus, &:active:hover,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    @include outline(0);
+    color: #212529;
+    background-color: #dee8f3;
+    border: 1px solid #dee8f3;
+  }
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
