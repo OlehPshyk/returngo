@@ -177,3 +177,16 @@
     }
   }      
 }
+.two-card-grid{
+  display: grid;
+  grid-gap: 27px 27px;
+  grid-template-columns: 1fr;
+  margin-bottom: 27px;
+  @include breakpoint(xl){
+    grid-template-columns: 1fr 1fr;
+  }
+  flex-wrap: wrap;
+  .h-card{
+    
+  }
+}
