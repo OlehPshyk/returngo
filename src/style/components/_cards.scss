@@ -24,6 +24,13 @@
   border-radius: 3px; 
 }
 
+.h-card-v1{
+  padding: 20px;
+  background: #FFFFFF;  
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 3px; 
+}
+
 .card-b-title{
   font-family: $secondary-font-family;    
   // font-weight: 500;
@@ -91,7 +98,7 @@
 
 .cards-container-v320{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 320px));
+  grid-template-columns: repeat(auto-fit, 320px);
   grid-gap: 24px 24px;  
   &:not(:last-child){
     margin-bottom: 24px;
@@ -180,13 +187,14 @@
 .two-card-grid{
   display: grid;
   grid-gap: 27px 27px;
-  grid-template-columns: 1fr;
-  margin-bottom: 27px;
+  grid-template-columns: 100%;  
   @include breakpoint(xl){
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: minmax(45%,1fr) minmax(45%,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   }
   flex-wrap: wrap;
-  .h-card{
-    
+  &:not(:last-child){
+    margin-bottom: 27px;
   }
+  // .h-card{}
 }

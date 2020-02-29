@@ -75,6 +75,23 @@ button.nav-link{
         }
       }
     }
+    &:hover{              
+      .nav-link-l-icon{
+        path{
+          fill: #7496F8;
+        }        
+      }
+      .nav-link-t{
+        color: #7496F8;
+      }
+      .nav-link-r-icon{
+        path{
+          fill: #7496F8;
+        }
+      }
+    }
+    // #7496f8
+    // #7496f8
   }
   .nav-link{
     padding: 0 30px;
