@@ -22,3 +22,32 @@
     // color: #FFFFFF;  
   }  
 }
+
+.btn-v2{
+  @include outline(0);
+  cursor: pointer;
+  border: none;  
+  display: inline-flex;
+  padding: 6px 8px;  
+  justify-content: center;
+  align-items: center;
+  min-width: 78px;
+  height: 29px;  
+  box-shadow: 0px 2px 2px rgba(30, 202, 184, 0.05);
+  border-radius: 3px;
+  font-family: $secondary-font-family;  
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.45;
+  text-align: center;
+  background: #334782;
+  color: #FFFFFF; 
+  &:hover, &:active, &:focus, &:active:hover{
+    @include outline(0);
+    // background: #4D79F6;
+    // color: #FFFFFF;  
+  }  
+  .btn-v2-t{
+    margin-right: 10px;
+  }
+}
