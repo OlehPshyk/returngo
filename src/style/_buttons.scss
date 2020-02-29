@@ -1,6 +1,10 @@
 .btn-v1{
   @include outline(0);
   cursor: pointer;
+  &:disabled, &.disabled{
+    cursor: default;
+    opacity: 0.65;
+  }
   border: none;  
   display: inline-flex;
   padding: 10px 20px;  
@@ -16,16 +20,26 @@
   text-align: center;
   background: #4D79F6;
   color: #FFFFFF; 
+  transition: color .15s ease-in-out,background-color .15s ease-in-out;
   &:hover, &:active, &:focus, &:active:hover{
     @include outline(0);
     // background: #4D79F6;
     // color: #FFFFFF;  
   }  
+  &:hover, &.active, &:active, &:active:hover,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active { 
+    background-color: #3567f5;    
+  }
 }
 
 .btn-v2{
   @include outline(0);
   cursor: pointer;
+  &:disabled, &.disabled{
+    cursor: default;
+    opacity: 0.65;
+  }
   border: none;  
   display: inline-flex;
   padding: 6px 8px;  
@@ -54,6 +68,11 @@
 
 .input-group-btn{  
   @include outline(0);
+  cursor: pointer;
+  &:disabled, &.disabled{
+    cursor: default;
+    opacity: 0.65;
+  }
 	padding: 8px 10px;
 	font-family: $secondary-font-family;	
 	font-weight: 400;
@@ -77,4 +96,3 @@
   }
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
