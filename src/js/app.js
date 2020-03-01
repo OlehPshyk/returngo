@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
   //     width: '100%',
   //   },
   // );
-
   // render dropdown into parent element .js-select2-int-box
   $('.js-select2-int-box .js-select2').each( function () {
     let $parent = $(this).parent();
@@ -40,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
       minimumResultsForSearch: Infinity,
       width: '100%',
       dropdownParent: $parent,
+      // dropdownPosition: 'below',
+      // dropdownPosition: 'above',
     });
   });
 
