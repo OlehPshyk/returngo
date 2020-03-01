@@ -24,12 +24,29 @@ import rgReturnReasonsChart from './rgReturnReasonsChart';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  $('.js-select2').select2(
-    {
+
+  // defoult render dropdown into parent <body>
+  // $('.js-select2').select2(
+  //   {
+  //     minimumResultsForSearch: Infinity,
+  //     width: '100%',
+  //   },
+  // );
+
+  // render dropdown into parent element .js-select2-int-box
+  $('.js-select2-int-box .js-select2').each( function () {
+    let $parent = $(this).parent();
+    $(this).select2({
       minimumResultsForSearch: Infinity,
       width: '100%',
-    },
-  );
+      dropdownParent: $parent,
+    });
+  });
+
+  // render dropdown into parent element .js-select2-modal-box
+  // $('.js-select2-modal-box .js-select2').each( function () {});  // for future select in modal
+
+
   rgOverviewChart();
   rgColorPicker();
   rgFileInput();
