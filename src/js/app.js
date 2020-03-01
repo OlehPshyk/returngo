@@ -20,6 +20,8 @@ import 'select2';
 import rgColorPicker from './rgColorPicker';
 import rgOverviewChart from './rgOverviewChart';
 import rgFileInput from './rgFileInput';
+import rgReturnReasonsChart from './rgReturnReasonsChart';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   $('.js-select2').select2(
@@ -30,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   rgOverviewChart();
   rgColorPicker();
   rgFileInput();
+  rgReturnReasonsChart();
 });
 
 

@@ -22,3 +22,31 @@
     color: #7286A2;
   }
 }
+.table.v2{
+  th{
+    border: none;
+    font-family: $secondary-font-family;    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #50649C;
+    background: #EAF0F7;
+    white-space: nowrap;
+  }
+  td{
+    font-family: $secondary-font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #50649C;
+    white-space: nowrap;
+    border-top: 1px solid #EAF0F7;
+  }
+  .td-n{
+    font-weight: 700;
+    color: #7286A2;
+  }
+  .td-1{
+    color: #4D79F6;
+  }
+}

@@ -1,8 +1,8 @@
-.v-card{  
+.v-card{     
   padding: 15px 20px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
-  border-radius: 3px;  
+  border-radius: 3px;   
   .card-text{    
     font-family: $global-font-family;    
     font-size: 14px;
@@ -55,6 +55,14 @@
   line-height: 1.46;    
   color: $secondary-text-color;
   margin-bottom: 1em;  
+}
+
+.card-vc-title{
+  font-family: $secondary-font-family;    
+  // font-weight: 500;
+  font-size: 15px;
+  line-height: 1.46;    
+  color: $secondary-text-color;   
 }
 
 .h-card-title{
@@ -205,4 +213,17 @@
     margin-bottom: 27px;
   }
   // .h-card{}
+}
+.v-card-top-container{
+  position: relative;
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.v-card-abs-btn-box{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
 }

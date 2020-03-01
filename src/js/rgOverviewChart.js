@@ -3,7 +3,7 @@ import ApexCharts from 'apexcharts';
 const rgOverviewChart = () => {
   const returnsOverview = document.getElementById('returns-overview-chart');
   if (returnsOverview) {
-    console.log("chart present");
+    // console.log("chart present");
     const optionsOverviewChart = {
       series: [
         {
