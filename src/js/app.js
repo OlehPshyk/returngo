@@ -21,12 +21,12 @@ import rgColorPicker from './rgColorPicker';
 import rgOverviewChart from './rgOverviewChart';
 import rgFileInput from './rgFileInput';
 import rgReturnReasonsChart from './rgReturnReasonsChart';
+import industryAddon from './industryAddon';
 // import rgWorldMapChart from './rgWorldMapChart';
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
-
   // defoult render dropdown into parent <body>
   // $('.js-select2').select2(
   //   {
@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   rgFileInput();
   rgReturnReasonsChart();
   // rgWorldMapChart();
+  industryAddon();
 });
 
 
