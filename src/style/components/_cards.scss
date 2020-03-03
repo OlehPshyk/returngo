@@ -114,8 +114,11 @@
 
 .cards-container-v320{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 320px);
-  grid-gap: 24px 24px;  
+  grid-template-columns: repeat(auto-fit, minmax(100%, 320px));
+  grid-gap: 24px 24px;
+  @include breakpoint(sm){
+    grid-template-columns: repeat(auto-fit, 320px);    
+  }   
   &:not(:last-child){
     margin-bottom: 24px;
   }  
@@ -222,8 +225,13 @@
   margin-bottom: 15px;
 }
 .v-card-abs-btn-box{
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translate(0, -50%);
+  @include breakpoint(xs-only){
+    margin-left: auto;
+  }
+  @include breakpoint(sm){
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+  }
 }

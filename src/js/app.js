@@ -21,7 +21,7 @@ import rgColorPicker from './rgColorPicker';
 import rgOverviewChart from './rgOverviewChart';
 import rgFileInput from './rgFileInput';
 import rgReturnReasonsChart from './rgReturnReasonsChart';
-import rgWorldMapChart from './rgWorldMapChart';
+// import rgWorldMapChart from './rgWorldMapChart';
 
 
 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   rgColorPicker();
   rgFileInput();
   rgReturnReasonsChart();
-  rgWorldMapChart();
+  // rgWorldMapChart();
 });
 
 

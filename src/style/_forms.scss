@@ -64,9 +64,9 @@ textarea {
 		border: 1px solid #EBF0F7;	
 		box-shadow: none;
 	}
-	&.v1{
-		background-color: #F2F5FA;		
-	}
+	&:disabled, &.disabled{
+		background-color: #F2F5FA;
+	}	
 }
 
 // .ret-custom-select {	

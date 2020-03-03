@@ -6,11 +6,12 @@ body {
   height: 100%;  
 }
 
-@import '~select2/src/scss/core.scss'; 
+
 
 @import "custom";
 //bootstrap all styles
 @import "~bootstrap/scss/bootstrap";
+@import '~select2/src/scss/core.scss'; 
 
 @import 'variables';
 @import 'mixins';

@@ -119,6 +119,65 @@ const rgOverviewChart = () => {
           },
         },
       },
+      responsive: [
+        {
+          breakpoint: 575,
+          options: {
+            chart: {
+              height: 300,
+              width: '100%',
+            },
+            plotOptions: {
+              bar: {
+                columnWidth: 60,
+              },
+            },
+            stroke: {
+              show: true,
+              width: 3,
+              colors: ['transparent'],
+            },
+          },
+        },
+        {
+          breakpoint: 767,
+          options: {
+            chart: {
+              height: 400,
+              width: '100%',
+            },
+            plotOptions: {
+              bar: {
+                columnWidth: 30,
+              },
+            },
+            stroke: {
+              show: true,
+              width: 3,
+              colors: ['transparent'],
+            },
+          },
+        },
+        {
+          breakpoint: 1199,
+          options: {
+            chart: {
+              height: 400,
+              width: '100%',
+            },
+            plotOptions: {
+              bar: {
+                columnWidth: 20,
+              },
+            },
+            stroke: {
+              show: true,
+              width: 3,
+              colors: ['transparent'],
+            },
+          },
+        },
+      ],
     };
     const chart = new ApexCharts(returnsOverview, optionsOverviewChart);    
     chart.render();    
