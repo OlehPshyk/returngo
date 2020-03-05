@@ -7,7 +7,7 @@ const hmbBtn = () => {
   };
   if (menuBtn) {
     menuBtn.addEventListener('click', togglemenu);
-  }  
+  }
 };
 
 export default hmbBtn;

@@ -47,7 +47,7 @@
     </div>
     <nav class="r-nav">
       <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="./index.html"> <!-- change to ./-->
+        <li class="nav-item active"><a class="nav-link" href="./index.html"> <!-- change to ./-->
           <div class="nav-link-l">
             <svg class="nav-link-l-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M13.1875 15.0625H10.375L10.3438 9.40625H5.6875L5.65625 15.0625H2.84375L2.8125 6.59375H1.90625L1.875 16H14.1562L14.125 6.59375H13.2188L13.1875 15.0625ZM6.625 15.0625L6.59375 10.3438H9.4375L9.40625 15.0625H6.625ZM15.8125 6.09375L15.2812 6.84375L8 1.53125L0.78125 6.84375L0.1875 6.09375L8.03125 0.34375L15.8125 6.09375Z" fill="#7496F8"/>
@@ -69,7 +69,7 @@
             <path d="M5.77344 5.60547L1.14453 10.2344L0.734375 9.80469L4.93359 5.60547L0.734375 1.40625L1.14453 0.996094L5.77344 5.60547Z" fill="#7496F8"/>
           </svg>
         </a></li>
-        <li class="nav-item active"><a class="nav-link" href="./customize.html">
+        <li class="nav-item"><a class="nav-link" href="./customize.html">
           <div class="nav-link-l">              
             <svg class="nav-link-l-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M0 0V16H16V0H0ZM0.9375 5.65625H9.40625V15.0625H0.9375V5.65625ZM15.0625 15.0625H10.3438V5.65625H15.0625V15.0625ZM0.9375 4.71875V0.9375H15.0625V4.71875H0.9375Z" fill="#50649C" fill-opacity="0.8"/>
@@ -116,149 +116,48 @@
       </ul>
     </nav>
   </div>
-  <main class="main">    
+  <main class="main">      
     <article class="content">
       <div class="wrapper">
         <div class="content-container">
-          <h1 class="page-title">Customize</h1>           
-          <div class="v-card">
-            <form action="">
-              <div class="v-card-section"> 
-                <div class="card-title-container">
-                  <h2 class="card-b-title">
-                    Subtitle
-                  </h2>  
-                  <div class="card-text">
-                    <p>Here you can customize the look & feel of your whitelabel solution. We help you fit it to your brand style as we can.</p>
-                  </div>                        
-                </div>
-                <div class="set-item">
-                  <div class="set-item-t-part">
-                    <h3 class="set-item-title">Upload logo</h3>         
-                    <div class="set-item-text">
-                      <p>Recommended size 200x200</p>
-                    </div>       
-                  </div>
-                  <div class="set-item-i-part">
-                    <div class="input-group">
-                      <div class="custom-file rg-custom-file">
-                        <input id="inputFileLogo" type="file" class="custom-file-input">
-                        <label class="custom-file-label" for="inputFileLogo"></label>
-                      </div>                    
-                    </div>
-                  </div>              
-                </div>
-                <div class="set-item">
-                  <div class="set-item-t-part">
-                    <h3 class="set-item-title">Default font</h3>     
-                    <div class="set-item-text">
-                      Your store URL where users can shop
-                    </div>           
-                  </div>                
-                  <div class="set-item-i-part">
-                    <div class="input-group">
-                      <div class="select2-int-box js-select2-int-box">
-                        <select class="js-select2" name="defFont" id="defFont"> 
-                          <!-- <optgroup>                            
-                            <option value="Poppins" selected>Poppins</option>
-                            <option value="Roboto">Roboto</option>
-                            <option value="OpenSans">OpenSans</option>
-                            <option value="Titillium">Titillium</option>
-                            <option value="Raleway">Raleway</option>
-                            <option value="Lato">Lato</option>
-                            <option value="Montserrat">Montserrat</option>
-                          </optgroup> -->
-                          <option value="Poppins" selected>Poppins</option>
-                          <option value="Roboto">Roboto</option>
-                          <option value="OpenSans">OpenSans</option>
-                          <option value="Montserrat">Montserrat</option>
-                          <option value="Titillium">Titillium</option>
-                          <option value="Raleway">Raleway</option>
-                          <option value="BebasNeue">BebasNeue</option>
-                          <option value="Lato">Lato</option>
-                          <option value="Oswald">Oswald</option>
-                          <option value="SourceSansPro">SourceSansPro</option>
-                          <option value="PlayfairDisplay">PlayfairDisplay</option>
-                          <option value="Lobster">Lobster</option>                        
-                          <option value="Antonio">Antonio</option>
-                          <option value="TimesNewRoman">TimesNewRoman</option>
-                          <option value="Times">Times</option>
-                          <option value="CourierNew">CourierNew</option>
-                          <option value="Courier">Courier</option>
-                          <option value="Verdana">Verdana</option>
-                          <option value="Georgia">Georgia</option>
-                          <option value="Palatino">Palatino</option>
-                          <option value="Garamond">Garamond</option>
-                          <option value="Bookman">Bookman</option>
-                          <option value="ComicSansMS">ComicSansMS</option>
-                          <option value="Candara">Candara</option> 
-                          <option value="ArialBlack">ArialBlack</option>
-                          <option value="Impact">Impact</option>
-                          <option value="Arial">Arial</option> 
-                          <option value="Mojito">Mojito</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>              
-                </div>
-                <div class="set-item">
-                  <div class="set-item-t-part">
-                    <h3 class="set-item-title">Default text color</h3>     
-                    <div class="set-item-text">
-                      We recommend to use black as default. Feel free to change if needed Enter color hex code
-                    </div>           
-                  </div>                
-                  <div class="set-item-i-part">
-                    <div class="input-group">
-                      <input type="text" class="form-control ret-form-control" placeholder="" id="defTextColor" value="#000000">
-                      <div class="input-group-color-append">                      
-                        <input type="color" class="ret-color-picker" placeholder="" id="defTextColorPicker" value="#000000">
-                      </div>
-                      
-                    </div>
-                  </div>              
-                </div>
-              </div>
-              <div class="v-card-btn-container">
-                <button class="btn-v1" type="submit">Save</button>
-              </div> 
-            </form> 
-            <div class="example-container">                         
-              <div class="example-text">
-                <p>Your customers will see something like this:</p>
-              </div> 
-              <div class="example-shadow-container">
-                <div class="example-phone-container">                
-                  <img class="img-phone-wr" src="./static/img/phone-wr.png" alt="phone-wr">
-                  <!-- <div class="phone-parts-container">
-                    <img class="img-phone-parts" src="./static/img/phone-parts.png" alt="phone-parts">
-                  </div> -->
-                  <div class="phone-in-container">
-                    <img class="img-phone-in" src="./static/img/phone-in.png" alt="phone-in">
-                    <div class="mobile-content-container">
-                      <img class="img-phone-content" src="./static/img/mobile-content.png" alt="phone-content">
-                    </div>
-                  </div>    
-                  <div class="btn1"></div>
-                  <div class="btn2"></div>
-                  <div class="btn3"></div>
-                  <div class="btn4"></div>
-                </div>
-              </div>
-            </div>
-          </div>  
-        </div>               
+
+          <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+          </div>
+          <div class="alert alert-info alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+          </div>
+          <div class="alert alert-warning alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+          </div>
+          <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+          </div>
+          <div class="alert alert-primary alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Primary!</strong> Indicates an important action.
+          </div>
+          <div class="alert alert-secondary alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Secondary!</strong> Indicates a slightly less important action.
+          </div>
+          <div class="alert alert-dark alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Dark!</strong> Dark grey alert.
+          </div>
+          <div class="alert alert-light alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Light!</strong> Light grey alert.
+          </div> 
+
+        </div>
       </div>
-    </article>
-    <!-- <footer class="footer">
-        <span class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> returngo</span>
-    </footer> -->
-  </main>
+    </article>    
+  </main>   
   
-    
-  <!--
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  -->
 </body>
 </html>
