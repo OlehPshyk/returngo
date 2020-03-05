@@ -6,16 +6,53 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: $header-sm-bg;  
   min-height: $header-height;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 $pad-x-xl;
+  padding: 0 $pad-x;
+  @include breakpoint(sm){
+    padding: 0 $pad-x-xl;
+  }
+  @include breakpoint(xl){
+    background-color: #fff;
+    justify-content: flex-end;
+  }
+  .xs-logo-container{
+    display: none;
+    height: $header-height;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    @include breakpoint(lg-down){      
+      display: inline-flex;      
+    }
+    .logo-img-box{
+      flex: 0 0 auto;
+      width: 130px;
+      height: 35px;
+      // height: 25px;
+      // margin-right: 8px;
+    }
+    .logo{
+      width: 100%; 
+      height: 100%;
+      object-fit: contain;
+      object-position: 50% 50%;
+    } 
+  }
+  .r-header{
+    display: flex;
+    align-items: center;
+  }
   .user-container{
     display: flex;
     align-items: center;
     cursor: pointer;
+    @include breakpoint(lg-down){
+      margin-right: 12px;
+    }    
   }
   .logo-container{
     width: 40px;
@@ -27,8 +64,10 @@
     align-items: center;
     overflow: hidden;
     cursor: pointer;
-    &:not(:last-child){
-      margin-right: 10px;
+    @include breakpoint(sm){
+      &:not(:last-child){
+        margin-right: 10px;
+      }
     }
     .user-svg{
       width: 20px;
@@ -42,6 +81,10 @@
     }
   }  
   .user-email{
+    display: none;
+    @include breakpoint(sm){
+      display: block;
+    }
     font-family: $secondary-font-family;    
     font-size: 13px;
     line-height: 1.46;
@@ -53,5 +96,37 @@
   }
   .r-arrow{
     cursor: pointer;
+  }
+  .menu-btn{
+    @include breakpoint(xl){
+      display: none;
+    }
+    background: transparent;
+    border: none;
+    @include outline(0);
+    width: 40px;    
+    cursor: pointer;         
+    span{
+      display: block;
+      height: 4px;
+      background: #EAF0F7;
+      border-radius: 2px;
+      &:not(:last-child){
+        margin-bottom: 6px;
+      }      
+      transition: transform 0.35s cubic-bezier(0.30, 0.15, 0.30, 0.90) 0s; 
+      transform-origin: 0% 50%;
+    }    
+    &.active{
+      span:first-child{
+        transform: rotate(45deg);        
+      }
+      span:nth-child(2){
+        opacity: 0;
+      }
+      span:last-child{
+        transform: rotate(-45deg);         
+      }
+    }
   }
 }
