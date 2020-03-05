@@ -16,12 +16,14 @@ import 'bootstrap/js/dist/tooltip';
 import 'bootstrap/js/dist/util';
 
 
+import hmbBtn from './hmbBtn';
 import 'select2';
 import rgColorPicker from './rgColorPicker';
 import rgOverviewChart from './rgOverviewChart';
 import rgFileInput from './rgFileInput';
 import rgReturnReasonsChart from './rgReturnReasonsChart';
 import industryAddon from './industryAddon';
+
 // import rgWorldMapChart from './rgWorldMapChart';
 
 
@@ -49,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // render dropdown into parent element .js-select2-modal-box
   // $('.js-select2-modal-box .js-select2').each( function () {});  // for future select in modal
 
-
+  hmbBtn();
   rgOverviewChart();
   rgColorPicker();
   rgFileInput();
