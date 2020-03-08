@@ -104,7 +104,12 @@ button.nav-link{
           path{
             fill: #7496F8;          
           }
-        }
+        }        
+      }      
+    }
+    .toggle-btn:not(.collapsed){
+      .nav-link-r-icon{
+        transform: rotate(90deg);
       }
     }
     &:hover{  
