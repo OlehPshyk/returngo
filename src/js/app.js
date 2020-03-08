@@ -23,6 +23,7 @@ import rgOverviewChart from './rgOverviewChart';
 import rgFileInput from './rgFileInput';
 import rgReturnReasonsChart from './rgReturnReasonsChart';
 import industryAddon from './industryAddon';
+import industruReasonChange from './industruReasonChange';
 
 // import rgWorldMapChart from './rgWorldMapChart';
 
@@ -58,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   rgReturnReasonsChart();
   // rgWorldMapChart();
   industryAddon();
+  industruReasonChange();
 });
 
 
