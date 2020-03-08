@@ -24,8 +24,11 @@ import rgFileInput from './rgFileInput';
 import rgReturnReasonsChart from './rgReturnReasonsChart';
 import industryAddon from './industryAddon';
 import industruReasonChange from './industruReasonChange';
+import rgWorldMapChart from './rgWorldMapChart';
 
-// import rgWorldMapChart from './rgWorldMapChart';
+
+
+
 
 
 
@@ -38,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
   //   },
   // );
   // render dropdown into parent element .js-select2-int-box
-  $('.js-select2-int-box .js-select2').each( function () {
-    let $parent = $(this).parent();
+  $('.js-select2-int-box .js-select2').each(function () {
+    const $parent = $(this).parent();
     $(this).select2({
       minimumResultsForSearch: Infinity,
       width: '100%',
@@ -49,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  
+
   // render dropdown into parent element .js-select2-modal-box
   // $('.js-select2-modal-box .js-select2').each( function () {});  // for future select in modal
 
@@ -57,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   rgColorPicker();
   rgFileInput();
   rgReturnReasonsChart();
-  // rgWorldMapChart();
+  rgWorldMapChart();
   industryAddon();
   industruReasonChange();
 });
