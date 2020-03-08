@@ -15,6 +15,14 @@
     line-height: 1.57;    
     color: #A5ABC3;  
   }
+  .card-text-v2{
+    font-family: $global-font-family;    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.57;    
+    color: #50649C;  
+  }
+
   &:not(:last-child){
     margin: 0 0 24px 0;
   } 

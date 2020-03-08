@@ -67,6 +67,9 @@ textarea {
 	&:disabled, &.disabled{
 		background-color: #F2F5FA;
 	}	
+	&[readonly][data-input=reason]{
+		background-color: #fff;
+	}
 }
 
 // .ret-custom-select {	
@@ -145,4 +148,19 @@ textarea {
 .input-group > .input-group-append > .input-group-btn{
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+}
+.form{
+	// &:not(:last-child){
+	// 	margin-bottom: 42px;
+	// }
+	margin-bottom: 42px;
+}
+
+.input-group-prepend{
+	.checkbox-container{
+		width: 25px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
 }
