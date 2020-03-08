@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 $pad-x;
+  box-shadow: 0 0 3px rgba(31,30,47,.05);
   @include breakpoint(sm){
     padding: 0 $pad-x-xl;
   }
