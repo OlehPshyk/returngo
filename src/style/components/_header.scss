@@ -30,6 +30,7 @@
       display: inline-flex;      
     }
     .logo-img-box{
+      position: relative;
       flex: 0 0 auto;
       width: 130px;
       height: 35px;
@@ -42,6 +43,12 @@
       object-fit: contain;
       object-position: 50% 50%;
     } 
+    .beta-tag{
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translate(5px,-50%);
+    }
   }
   .r-header{
     display: flex;
