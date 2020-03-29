@@ -22,50 +22,39 @@
 // import 'select2';
 
 import hmbBtn from './hmbBtn';
-
+import select2Init from './select2Init';
 import rgColorPicker from './rgColorPicker';
-import rgOverviewChart from './rgOverviewChart';
 import rgFileInput from './rgFileInput';
-import rgReturnReasonsChart from './rgReturnReasonsChart';
 import industryAddon from './industryAddon';
 import industruReasonChange from './industruReasonChange';
-import rgWorldMapChart from './rgWorldMapChart';
 
-document.addEventListener('DOMContentLoaded', () => {
-  // defoult render dropdown into parent <body>
-  // $('.js-select2').select2(
-  //   {
-  //     minimumResultsForSearch: Infinity,
-  //     width: '100%',
-  //   },
-  // );
-  // render dropdown into parent element .js-select2-int-box
-  // $('.js-select2-int-box .js-select2').each(function () {
-  //   const $parent = $(this).parent();
-  //   $(this).select2({
-  //     minimumResultsForSearch: Infinity,
-  //     width: '100%',
-  //     dropdownParent: $parent,
-  //     // dropdownPosition: 'below',
-  //     // dropdownPosition: 'above',
-  //   });
-  // });
 
-  
 
-  // render dropdown into parent element .js-select2-modal-box
-  // $('.js-select2-modal-box .js-select2').each( function () {});  // for future select in modal
+// //  translated to <script> into html for one page only
+// import rgOverviewChart from './rgOverviewChart';
 
+// //  translated to <script> into html for one page only
+// import rgReturnReasonsChart from './rgReturnReasonsChart';
+
+// //  translated to <script> into html for one page only
+// import rgWorldMapChart from './rgWorldMapChart';
+
+document.addEventListener('DOMContentLoaded', () => { 
   hmbBtn();
-  rgOverviewChart();
+  select2Init();  
   rgColorPicker();
   rgFileInput();
-  rgReturnReasonsChart();
-  rgWorldMapChart();
   industryAddon();
-  industruReasonChange();
-
+  industruReasonChange(); 
+  // rgOverviewChart(); 
+  // rgReturnReasonsChart();
+  // rgWorldMapChart();
   
+
+  // console.log('APP Selected change: TEST')
+  // $('.js-select2').on('change', function(e) { 
+  //   console.log('APP Selected change:', e.target )
+  // }); 
 });
 
 

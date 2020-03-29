@@ -11,9 +11,12 @@ body {
 @import "custom";
 //bootstrap all styles
 @import "~bootstrap/scss/bootstrap";
+
 @import '~select2/src/scss/core.scss'; 
+
 // <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
-@import '~jvectormap-next/jquery-jvectormap.css';
+
+// @import '~jvectormap-next/jquery-jvectormap.css';
 
 @import 'variables';
 @import 'mixins';

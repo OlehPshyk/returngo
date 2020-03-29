@@ -61,17 +61,20 @@ module.exports = {
         to: './static/',
       },
     ]),
-    new webpack.ProvidePlugin({        
-      '$': 'jquery',
-      'jQuery': 'jquery',
-      'window.jQuery': 'jquery',
-      'window.$': 'jquery',            
-      Popper: ['popper.js', 'default']
-    }),
+    // new webpack.ProvidePlugin({        
+    //   '$': 'jquery',
+    //   'jQuery': 'jquery',
+    //   'window.jQuery': 'jquery',
+    //   'window.$': 'jquery',            
+    //   Popper: ['popper.js', 'default']
+    // }),
     ...generateHTMLPlugins(),
   ],
   stats: {
     colors: true,
   },
   devtool: 'source-map',
+  externals: {
+    jquery: 'jQuery'
+  }
 };
