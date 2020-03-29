@@ -1,23 +1,28 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": true}] */
-import * as $ from 'jquery';
-import Popper from 'popper.js/dist/umd/popper';
-// import 'bootstrap';
-import 'bootstrap/js/dist/alert';
-import 'bootstrap/js/dist/button';
-import 'bootstrap/js/dist/carousel';
-import 'bootstrap/js/dist/collapse';
-import 'bootstrap/js/dist/dropdown';
-import 'bootstrap/js/dist/modal';
-import 'bootstrap/js/dist/popover';
-import 'bootstrap/js/dist/scrollspy';
-import 'bootstrap/js/dist/tab';
-import 'bootstrap/js/dist/toast';
-import 'bootstrap/js/dist/tooltip';
-import 'bootstrap/js/dist/util';
+// import 'jquery';
+// import * as $ from 'jquery';
 
+// import 'Popper';
+// import Popper from 'popper.js/dist/umd/popper';
+
+// // import 'bootstrap';
+// import 'bootstrap/js/dist/alert';
+// import 'bootstrap/js/dist/button';
+// import 'bootstrap/js/dist/carousel';
+// import 'bootstrap/js/dist/collapse';
+// import 'bootstrap/js/dist/dropdown';
+// import 'bootstrap/js/dist/modal';
+// import 'bootstrap/js/dist/popover';
+// import 'bootstrap/js/dist/scrollspy';
+// import 'bootstrap/js/dist/tab';
+// import 'bootstrap/js/dist/toast';
+// import 'bootstrap/js/dist/tooltip';
+// import 'bootstrap/js/dist/util';
+
+// import 'select2';
 
 import hmbBtn from './hmbBtn';
-import 'select2';
+
 import rgColorPicker from './rgColorPicker';
 import rgOverviewChart from './rgOverviewChart';
 import rgFileInput from './rgFileInput';
@@ -25,12 +30,6 @@ import rgReturnReasonsChart from './rgReturnReasonsChart';
 import industryAddon from './industryAddon';
 import industruReasonChange from './industruReasonChange';
 import rgWorldMapChart from './rgWorldMapChart';
-
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   // defoult render dropdown into parent <body>
@@ -41,16 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
   //   },
   // );
   // render dropdown into parent element .js-select2-int-box
-  $('.js-select2-int-box .js-select2').each(function () {
-    const $parent = $(this).parent();
-    $(this).select2({
-      minimumResultsForSearch: Infinity,
-      width: '100%',
-      dropdownParent: $parent,
-      // dropdownPosition: 'below',
-      // dropdownPosition: 'above',
-    });
-  });
+  // $('.js-select2-int-box .js-select2').each(function () {
+  //   const $parent = $(this).parent();
+  //   $(this).select2({
+  //     minimumResultsForSearch: Infinity,
+  //     width: '100%',
+  //     dropdownParent: $parent,
+  //     // dropdownPosition: 'below',
+  //     // dropdownPosition: 'above',
+  //   });
+  // });
 
   
 
@@ -65,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
   rgWorldMapChart();
   industryAddon();
   industruReasonChange();
+
+  
 });
 
 
