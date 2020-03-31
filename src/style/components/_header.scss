@@ -68,8 +68,8 @@
     }    
   }
   .dropdown-menu{
-    // box-shadow: 0 3px 12px rgba(214,228,241,0.3);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 12px rgba(214,228,241,0.3);
     margin: 0;
     background-color: #fff;    
     border: 1px solid rgba(0,0,0,0.05);
@@ -83,10 +83,10 @@
     white-space: nowrap;
     font-family: "Poppins";
     font-size: 13px;
-    line-height: 1.46;
-    color: #8997BD; 
-    &:hover {
-      color: #7496F8;
+    line-height: 1.46;    
+    &:hover {      
+      background-color: #f1f5fa;
+      color: #000444;
       .user-item-icon{
         path {
           fill: #7496F8;
@@ -97,7 +97,9 @@
   .user-item-icon{
     flex: 0 0 auto;
     margin-right: 8px;
-    
+    path {
+      fill: #a4abc5;
+    }    
   }  
   .logo-container{
     flex: 0 0 auto;
@@ -134,9 +136,10 @@
     font-family: $secondary-font-family;    
     font-size: 13px;
     line-height: 1.46;
-    color: #8997BD;    
+    // color: #8997BD;  
+    color: #303e67;  
     &:not(:last-child){
-      margin-right: 10px;
+      margin-right: 8px;
     }
   }
   .r-arrow{         
@@ -146,6 +149,9 @@
     }  
     flex: 0 0 auto;
     transform: rotate(90deg); 
+    path{
+      fill: #303e67;
+    }
   }
   .menu-btn{
     @include breakpoint(xl){
