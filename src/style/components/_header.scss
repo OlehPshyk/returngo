@@ -78,15 +78,15 @@
   .user-dropdown-item{    
     display: flex;    
     align-items: center;
-    padding: 6px 24px;    
-    color: #000444;    
+    padding: 6px 24px; 
+    color: #303e67;  
     white-space: nowrap;
     font-family: "Poppins";
     font-size: 13px;
     line-height: 1.46;    
     &:hover {      
       background-color: #f1f5fa;
-      color: #000444;
+      color: #303e67;
       .user-item-icon{
         path {
           fill: #7496F8;
