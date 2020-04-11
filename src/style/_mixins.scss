@@ -24,8 +24,8 @@
 @mixin outline($outline) {
   outline: $outline;
   outline-offset: $outline;
-  :active, :hover, :focus {
-      outline: $outline;
-      outline-offset: $outline;
+  &:active, &:hover, &:focus {
+    outline: $outline;
+    outline-offset: $outline;
   }   
 }
