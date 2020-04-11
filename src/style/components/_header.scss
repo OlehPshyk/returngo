@@ -55,6 +55,25 @@
     display: flex;
     align-items: center;
   }
+  // .faq-link{
+  //   margin-right: 8px;
+  //   .faq-icon{
+  //     width: 40px;
+  //     height: 40px; 
+  //     @include breakpoint(xl){
+  //       width: 24px;
+  //       height: 24px;
+  //     }      
+  //     &:hover {                 
+  //       path {
+  //         fill: #7496F8;
+  //       }
+  //       circle{
+  //         stroke: #7496F8;
+  //       }       
+  //     }      
+  //   } 
+  // }
   .user-container{
     align-self: stretch;
     @include outline(0);
@@ -91,6 +110,9 @@
         path {
           fill: #7496F8;
         }
+        // circle{
+        //   stroke: #7496F8;
+        // }       
       }      
     }   
   }  

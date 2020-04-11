@@ -1,0 +1,69 @@
+.togler-btn{    
+  @include outline(0);
+  width: 100%;  
+  padding: 17px 12px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f5fa;
+  border: none;  
+  .togler-icon{
+    margin-right: 8px;    
+  }  
+  .togler-text{
+    font-family: $secondary-font-family;
+    font-size: 14px;
+    line-height: 1.2;    
+    color: #50649C;    
+  }
+}  
+.togler-body{    
+  .body-container{
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #eaf0f7;
+  }
+  .q-body-title{
+    font-family: $secondary-font-family;       
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.27;    
+    color: $secondary-text-color;
+    margin-bottom: 1em;
+  }
+  .q-body-text{
+    color: #A5ABC3;
+    font-family: $global-font-family;    
+    font-size: 14px;
+    line-height: 1.27;  
+  }
+}
+
+// togler animation
+.togler-btn.collapsed{
+  .togler-icon{   
+    .togler-icon-arrow{
+      transform: rotate(0deg);      
+      opacity: 0;
+    }  
+    .togler-icon-question{
+      transform: rotate(0deg);      
+      opacity: 1;
+    } 
+  }
+}
+.togler-btn{  
+  .togler-icon{
+    .togler-icon-arrow{   
+      transition: all 0.25s ease-in-out; 
+      transform-origin: 50% 50%;  
+      transform: rotate(180deg);      
+      opacity: 1;
+    }  
+    .togler-icon-question{  
+      transition: all 0.25s ease-in-out; 
+      transform-origin: 50% 50%;    
+      transform: rotate(180deg);      
+      opacity: 0;
+    }
+  } 
+}
