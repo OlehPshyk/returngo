@@ -41,7 +41,7 @@ import industruReasonChange from './industruReasonChange';
 
 document.addEventListener('DOMContentLoaded', () => { 
   hmbBtn();
-  select2Init();  
+  select2Init();    
   rgColorPicker();
   rgFileInput();
   industryAddon();
@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // $('.js-select2').on('change', function(e) { 
   //   console.log('APP Selected change:', e.target )
   // }); 
+  
+  $('[data-toggle="tooltip"]').tooltip();
+  
 });
 
 
