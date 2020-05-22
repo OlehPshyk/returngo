@@ -56,7 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
   //   console.log('APP Selected change:', e.target )
   // }); 
   
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip({
+    // offset: "0 5",
+    // trigger: "click",
+    // delay: { show: 500, hide: 200 }
+  });
   
 });
 
