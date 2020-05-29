@@ -253,7 +253,38 @@
       line-height: 1.46;
       color: #656D9A;
     }
-  }      
+  } 
+  .custom-control-label{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.46;
+    color: #2F5275;
+    user-select: none;
+    text-align: justify;
+    .accent{
+      font-weight: 600;
+    }
+    &:before{
+      border: #EBF0F7 solid 1px;
+    }
+  } 
+  .unreturned-items-container{
+    display: flex;
+    align-items: flex-start;
+    &:not(:last-child){
+      margin-bottom: 8px;
+    }
+  }
+  .add-info-box{
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+  }    
 }
 .two-card-grid{
   display: grid;
