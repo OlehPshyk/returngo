@@ -27,7 +27,7 @@ import rgColorPicker from './rgColorPicker';
 import rgFileInput from './rgFileInput';
 import industryAddon from './industryAddon';
 import industruReasonChange from './industruReasonChange';
-
+import toggleVisibility from './toggleVisibility';
 
 
 // //  translated to <script> into html for one page only
@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   rgFileInput();
   industryAddon();
   industruReasonChange(); 
+  toggleVisibility();
   // rgOverviewChart(); 
   // rgReturnReasonsChart();
   // rgWorldMapChart();
