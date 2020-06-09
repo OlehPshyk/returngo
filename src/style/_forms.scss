@@ -193,4 +193,14 @@ textarea {
 			}
 		}
 	}
+	&.rect-bottom-border{
+		margin-bottom: 8px;
+		.ret-form-control{
+			border-radius: 0;
+		}		
+		.ret-form-control{
+			border-width: 0 0 1px 0;
+		}
+		
+	}
 }
