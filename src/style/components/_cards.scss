@@ -296,7 +296,16 @@
     justify-content: center;
     align-items: center;
     margin-left: 4px;
-  }    
+  } 
+  .unreturned-items-url{    
+    &.right{
+      display: flex;
+      justify-content: flex-end;
+    }  
+    &:not(:last-child){
+      margin-bottom: 8px;
+    }  
+  }   
 }
 .two-card-grid{
   display: grid;
