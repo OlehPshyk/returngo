@@ -1,4 +1,5 @@
-$pl-color: #7686A0;
+// $pl-color: rgba(#7686A0,0.4);
+$pl-color: #c8ced9;
 input::-webkit-input-placeholder {
 	color: $pl-color !important;
 }  
@@ -57,7 +58,8 @@ textarea {
 	color: #2F5275;
 	background-color: #fff;
 	padding: 8px 10px;
-	border: 1px solid #EBF0F7;	
+	// border: 1px solid #EBF0F7;	
+	border: 1px solid #e8ebf3;
 	border-radius: 5px;
 	&:hover, &:active, &:focus, &:active:hover{
 		@include outline(0);
@@ -69,6 +71,12 @@ textarea {
 	}	
 	&[readonly][data-input=reason]{
 		background-color: #fff;
+	}
+	&.dark10{
+		border: 1px solid darken(#e8ebf3, 10%);
+		&:hover, &:active, &:focus, &:active:hover{			
+			border: 1px solid darken(#EBF0F7, 10%);
+		}
 	}
 }
 
@@ -133,7 +141,8 @@ textarea {
 	padding: 6px 9px;
 	cursor: pointer;	
 	height: 100%;
-	border: 1px solid #EBF0F7;
+	// border: 1px solid #EBF0F7;
+	border: 1px solid #e8ebf3;
   border-radius: 5px;
 	background-color: #fff;	
 	&:hover, &:active, &:focus, &:active:hover{
@@ -193,14 +202,14 @@ textarea {
 			}
 		}
 	}
-	&.rect-bottom-border{
-		margin-bottom: 8px;
-		.ret-form-control{
-			border-radius: 0;
-		}		
-		.ret-form-control{
-			border-width: 0 0 1px 0;
-		}
+	// &.rect-bottom-border{
+	// 	margin-bottom: 8px;
+	// 	.ret-form-control{
+	// 		border-radius: 0;
+	// 	}		
+	// 	.ret-form-control{
+	// 		border-width: 0 0 1px 0;
+	// 	}
 		
-	}
+	// }
 }
